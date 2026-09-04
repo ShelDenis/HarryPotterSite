@@ -58,6 +58,25 @@
         <li>Букля</li>
     </ol>
 
+    <img id="myImage" src="https://avatars.mds.yandex.net/get-kinopoisk-post-img/1374145/13418541db82848210f6b9a8dfc487b1/960" alt="Картинка" width="300">
+    <br>
+    <button onclick="toggleImage()">Сменить картинку</button>
+
+    <script>
+        let isFirst = true;
+
+        function toggleImage() {
+        const img = document.getElementById('myImage');
+        if (isFirst) {
+            img.src = "https://content.onliner.by/news/1400x5616/03c7fd649230d66c0c9a4f0462f39e96.jpg";
+        } else {
+            img.src = "https://avatars.mds.yandex.net/get-kinopoisk-post-img/1374145/13418541db82848210f6b9a8dfc487b1/960";
+        }
+        isFirst = !isFirst;     
+        }
+    </script>
+
+
   <script src="/assets/js/xy-polyfill.js" nomodule></script>
   <script src="/assets/js/script.js" type="module"></script>
 </body>
