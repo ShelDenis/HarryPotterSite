@@ -1,5 +1,5 @@
 body {
-    background-image: url(https://i.pinimg.com/originals/4a/12/5f/4a125fe01468b836fe30c501af456d44.jpg?nii=t);
+    background-image: url(https://i.pinimg.com/originals/c1/92/0a/c1920a3a6629d6ef8e3a9e896575e8f0.webp?nii=t);
     background-size: cover;
     background-repeat: no-repeat;
     padding: 20px;
@@ -79,4 +79,75 @@ div {
     margin-top: 4px;
     background: burlywood;
     height: 150px;
+}
+
+.gradient_h1 {
+    background-image: linear-gradient(to left, blue, cyan);
+    background-clip: text;
+    color:transparent; 
+    text-shadow: 0px 4px 10px rgba(255, 255, 255, 1)
+}
+
+.gradient_h2 {
+    background-image: radial-gradient(#880088, #FF00FF);
+    background-clip: text;
+    color:transparent;
+}
+
+.gradient_p {
+    background-image: conic-gradient(#FFBBFF, #AAFFFF, #FFFFAA);
+    background-clip: text;
+    color:transparent;
+}
+
+.rotated {
+    transform: rotate(30deg);
+}
+
+.translated {
+    transform: translate(150px, 30px);
+}
+
+.skewed {
+    transform: skew(45deg, 0deg);
+}
+
+li:hover {
+    background-color: aqua;
+}
+
+@keyframes bgColorAnimation {
+    from {
+        background-color: antiquewhite;
+    }
+    to {
+        background-color: #AAFFFF
+    }
+    
+}
+
+.animated {
+    animation-name: bgColorAnimation;
+    animation-duration: 5s;
+}
+
+table {
+    width: 70%;
+    margin-bottom: 20px;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+table th {
+    font-weight: bold;
+    padding: 5px;
+    background: gold;
+    border: 1px solid black;
+}
+
+table td {
+    border: 1px solid black;
+    padding: 5px;
+    background: wheat;
+    font-style: italic;
 }
