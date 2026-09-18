@@ -28,6 +28,9 @@
             <a href="spells.html">Заклинания</a>
         </li>
         <li class="nav_elem">
+            <a href="teachers.html">Учителя</a>
+        </li>
+        <li class="nav_elem">
             <a href="site_structure.html">Структурированная Главная</a>
         </li>
     </ul>
@@ -65,6 +68,8 @@
     <br>
     <button onclick="toggleImage()">Сменить картинку</button>
 
+    <button onclick="changeTheme()">Сменить тему</button>
+
     <script>
         let isFirst = true;
 
@@ -77,7 +82,20 @@
         }
         isFirst = !isFirst;     
         }
+
+        function changeTheme() {
+            if (document.body.classList.contains('dark')) {
+                document.body.classList.remove('dark');
+                document.body.classList.add('light');
+            }
+            else {
+                document.body.classList.remove('light');
+                document.body.classList.add('dark');
+            }
+        }
     </script>
+
+    <h2 class="neon_text">Люмос Максима!</h2>
 
 
   <script src="/assets/js/xy-polyfill.js" nomodule></script>
