@@ -7,7 +7,14 @@
   <title>Unique page title - My Site</title>
 
   <script type="module">
-  </script>
+    const btn = document.getElementById('magicBtn');
+    const lst = ['Алохомора!', 'Авада Кедавра!']; 
+    
+    btn.onclick = function() {
+        const randomSpell = lst[Math.floor(Math.random() * lst.length)];
+        btn.innerHTML = `<span class="magic">✨</span> ${randomSpell}`;
+    }
+</script>
 
   <link rel="stylesheet" href="style.css">
 </head>
@@ -33,7 +40,7 @@
         <li class="nav_elem">
             <a href="site_structure.html">Структурированная Главная</a>
         </li>
-    </ul>Ы
+    </ul>
 
     <table>
         <tr>
@@ -67,6 +74,10 @@
             <td>Парализует противника</td>
         </tr>
     </table>
+
+    <button id="magicBtn" class="magic-button">
+        <span class="magic">✨</span>Применить заклинание!
+    </button>
 
 
   <script src="/assets/js/xy-polyfill.js" nomodule></script>
